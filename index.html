@@ -405,7 +405,7 @@ async function searchProducts(page = 1){
 
     try{
         const url =
-            `https://api-stg.opencitations.net/skg-if/v1/products?filter=cf.search.title:${encodeURIComponent(searchPattern)}`
+            `https://api.opencitations.net/skg-if/v1/products?filter=cf.search.title:${encodeURIComponent(searchPattern)}`
             + `&page_size=${PAGE_SIZE}&page=${page}`;
 
         const response = await fetch(url);
